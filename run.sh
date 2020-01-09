@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo python3 ~/translatordesktop/app.py
+sudo nohup python3 ~/translatordesktop/app.py
