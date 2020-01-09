@@ -26,9 +26,9 @@ class TranslateFrame(tk.Frame):
         self.trans_bnt.pack(side="top")
 
     def translate(self):
-        text = self.gtranslator.translate(self.text)
+        text = self.gtranslator.translate(self.text.lower())
         self.translateFrame = TranslatedFrame(master=tk.Tk())
-        self.translateFrame.insert_text(text.lower())
+        self.translateFrame.insert_text(text)
         self.master.destroy()
     
     def show(self):
